@@ -6,12 +6,13 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "start": "webpack --config webpack.dev.js",
+    "start": "webpack-dev-server  --config webpack.dev.js --open",
     "build": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@webpack-cli/serve": "^2.0.5",
     "bootstrap": "^4.3.1",
     "css-loader": "^2.1.0",
     "html-webpack-plugin": "^3.2.0",
@@ -20,6 +21,7 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.5.1",
     "webpack-merge": "^4.2.1"
   }
 }
