@@ -6,7 +6,8 @@
   "main": "index.js",
   "keywords": [],
   "scripts": {
-    "start": "webpack --config webpack.config.js"
+    "start": "webpack --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +19,7 @@
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "webpack": "^4.29.6",
-    "webpack-cli": "^3.2.3"
+    "webpack-cli": "^3.2.3",
+    "webpack-merge": "^4.2.1"
   }
 }
