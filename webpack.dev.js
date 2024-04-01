@@ -19,5 +19,8 @@ module.exports = merge(common,{
                 ]
               }
         ]
-    }
+    },
+    plugins: [new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, "./src/template.html")
+      })]
 })
